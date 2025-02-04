@@ -66,6 +66,11 @@ export const PROJECT_TEMPLATES = [
   {
     value: "vercel" as const,
     label: "Vercel",
+    expand: ["react-router", "react-router-vercel"],
+  },
+  {
+    value: "vercel-legacy" as const,
+    label: "Vercel (legacy)",
     expand: ["defaults", "vercel"],
   },
   {
@@ -75,12 +80,12 @@ export const PROJECT_TEMPLATES = [
   },
   {
     value: "netlify-functions" as const,
-    label: "Netlify Functions",
+    label: "Netlify Functions (legacy)",
     expand: ["defaults", "netlify-functions"],
   },
   {
     value: "netlify-edge-functions" as const,
-    label: "Netlify Edge Functions",
+    label: "Netlify Edge Functions (legacy)",
     expand: ["defaults", "netlify-edge-functions"],
   },
   {
